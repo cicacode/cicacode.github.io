@@ -1,0 +1,43 @@
+@import url(https://fonts.cdnfonts.com/css/ibm-plex-sans)
+
+@import "bulma/sass/utilities/initial-variables"
+@import "bulma/sass/utilities/functions"
+
+$family-primary: "IBM Plex Sans", sans-serif
+
+@import "bulma"
+
+.title
+    font-weight: 900
+    letter-spacing: -0.05em
+
+.subtitle
+    font-weight: 900
+    letter-spacing: -0.05em
+
+.bolder
+    font-weight: 900
+
+.skeleton
+    display: block
+    overflow: hidden
+    position: relative
+    box-sizing: border-box
+    background: #EEEEEE
+
+.skeleton:after
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    content: ''
+    position: absolute
+    background-size: 99% 100%
+    background-repeat: no-repeat
+    transform: translateX(-100%)
+    animation: 1.3s linear 1ms infinite normal backwards running k-shimmer
+    background-image: linear-gradient(89deg, #EEEEEE, #FFFFFF)
+
+@keyframes k-shimmer
+    100%
+        transform: translateX(100%)
