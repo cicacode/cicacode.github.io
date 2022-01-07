@@ -45,6 +45,7 @@ export default {
 
     // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
     buildModules: [
+        "nuxt-purgecss",
     ],
 
     // Modules: https://go.nuxtjs.dev/config-modules
@@ -54,6 +55,12 @@ export default {
 
     // Build Configuration: https://go.nuxtjs.dev/config-build
     build: {
+        html: {
+            minify: {
+                preserveLineBreaks: false,
+                collapseWhitespace: true
+            }
+        }
     },
 
     // Website bundle folder locate here after generate
