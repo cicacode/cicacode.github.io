@@ -54,5 +54,10 @@ export default {
 
     // Build Configuration: https://go.nuxtjs.dev/config-build
     build: {
-    }
+    },
+
+    // Website bundle folder locate here after generate
+    generate: {
+        dir: "docs"
+    },
 }
